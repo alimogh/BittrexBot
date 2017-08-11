@@ -5,8 +5,8 @@ from bottrade import BotTrade
 
 def main(argv):
 
-    trader = BotTrade("BTC-XRP", 0.001)
-    trader.simpleEMAtrade(10, 'thirtyMin')
+    trader = BotTrade("BTC-BAT", 0.001)
+    trader.simpleEMAtrade(10, 'fiveMin')
 
 
 if __name__ == "__main__":

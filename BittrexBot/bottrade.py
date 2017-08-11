@@ -22,8 +22,8 @@ class BotTrade(object):
         lastPrice = self.ticker['result']['Last']
         self.prices.append(lastPrice)
         self.currentMovingAverage = analyzer.EMA(prices, period)
-        #self.wallet = self.bittrex.getBalance("BTC")
-       # self.wallet = float(self.wallet['result']['Available'])
+        self.wallet = self.bittrex.getBalance("BTC")
+        self.wallet = float(self.wallet['result']['Available'])
 
         if len(prices) > 1:
             if not self.tradePlaced:
